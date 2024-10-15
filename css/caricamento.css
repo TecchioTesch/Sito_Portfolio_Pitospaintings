@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background-color: #BC97FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: url('/cursori/SVG/Ellipse\ 5.svg'), auto;
+
+}
+
+div {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+}
+
+.gif {
+    max-width: 10rem;
+    height: auto;
+}
+
+.none:hover {
+    fill: transparent;
+}
+
+a {
+    position: fixed;
+    bottom: 4rem;
+
+    transition: all 50ms;
+}

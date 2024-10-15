@@ -1,0 +1,156 @@
+
+/* PICCIONE indietro */
+#piccione {
+    max-width: 5.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+} 
+
+
+
+/* Hover per Menù con figure */
+nav a:hover .shape {
+    fill: transparent;
+}
+
+nav a:hover .text {
+    fill: #BC97FF;
+}
+
+a:hover {
+    color: #BC97FF;
+}
+
+
+
+/* Posizione Menù DESKTOP */
+.operenavdekstop {
+    margin: auto;
+ }
+
+/* DESKTOP */
+@media (min-width:1024px) {    
+
+    .operenavmobile {
+        display: none;
+    }
+
+    /* Posizione LAVORI e NAV contatti e about me */
+    #lavori {
+        position: fixed;
+        top: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .contatti {
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .contatti:hover {
+        transition: all 300ms;
+        transform: rotate(30deg);
+    }
+    
+    .aboutme {
+        position: fixed;
+        bottom: 3rem;
+        left: 3rem;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .aboutme:hover {
+        transition: all 300ms;
+        transform: rotate(-30deg);
+    }
+}
+
+
+
+/* Posizione Menù MOBILE */
+.operenavmobile {
+    margin-top: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MOBILE */
+@media (max-width:1023px) {
+
+    .operenavdekstop {
+        display: none;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 6rem;
+     }
+
+     .contatti {
+        display: none;
+     }
+
+     .aboutme {
+        display: none;
+     }
+
+     #change_mode {
+        position: fixed;
+        right: 3rem;
+        top: 3rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*cambio stile - NON USATO*/
+.bodyLight {
+    background-color: white;
+}
+
+.bodyDark {
+    background-color: black;
+    .text {
+        fill: black;
+    }
+}
+
+/* Pulsante per cambiare stile */
+#dentro:hover {
+    fill: transparent;
+    cursor: pointer;
+}
+
+ #change_mode {
+    position: fixed;
+    right: 7rem;
+    top: 7rem;
+ }
