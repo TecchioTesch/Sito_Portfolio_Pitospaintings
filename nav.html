@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitospaintings</title>
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+
+
+<body id="main">
+
+<!-- TITOLO, con link a "copertina" --> 
+ <a href="index.html">
+    <h1>Pito</h1>   
+</a>
+
+<!-- Menù HOME -> (tutto negli angoli SU DEKSTOP) e  (allineato al centro SU MOBILE) -->
+<nav>
+    <ul class="menuhome">
+        <li> 
+            <a href="opere/">lavori</a>
+        </li>
+        <li>
+            <a href="about_me.html">about me</a>
+        </li>
+        <li>
+            <a href="contatti.html">contatti</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- IMMAGINE -->
+<div class="immagine">
+    <img src="immagini/6pito/home.JPG" alt="testo alternativo">
+</div>
+
+
+ <!-- PULSANTE CHANGE MODE -->
+ <div id="change_mode" onclick="change();">
+
+    <svg class="cur" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="9" fill="#D9D9D9"/>
+        <circle id="dentro" cx="15" cy="15" r="13.5" fill="#D9D9D9" stroke="#D9D9D9" stroke-width="3"/>
+    </svg>    
+
+  </div>
+
+ <script src="/js/contatti.js"></script>
+
+</body>
+
+</html>
